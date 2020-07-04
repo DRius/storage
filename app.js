@@ -94,7 +94,7 @@ app.post('/upload', (req, res) => {
         console.log(`uploads/${req.file.filename}`);
         const fileReponse = addDownloadUrlToFileResponse(file, downloadRootUrl);
 
-        res.send(file);
+        res.send(fileReponse);
       }
     }
   });
